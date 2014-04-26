@@ -12,6 +12,7 @@ proc shoco_decompress(inp: cstring, len: cint, outp: cstring, bufsize: cint): ci
 
 # Nimrod wrapper
 proc compress*(input: string): string =
+    ## Compress the input string
     result = newStringOfCap(input.len)
 
     var length = shoco_compress(
@@ -23,6 +24,7 @@ proc compress*(input: string): string =
 
 
 proc decompress*(input: string): string =
+    ## Decompress the input string
     let buf_size = input.len * 4
     result = newStringOfCap(buf_size)
 
