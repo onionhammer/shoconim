@@ -1,0 +1,6 @@
+[Package]
+name = "shoco"
+version = "0.1"
+author = "Erik O'Leary"
+description = "Wrapper for shoco, https://github.com/Ed-von-Schleck/shoco"
+license = "MIT"
